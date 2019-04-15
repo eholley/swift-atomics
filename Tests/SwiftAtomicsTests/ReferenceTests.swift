@@ -110,7 +110,7 @@ public class ReferenceRaceTests: XCTestCase
   {
     let q = DispatchQueue(label: #function, attributes: .concurrent)
 
-    for _ in 1...iterations
+    for _ in 1...iterations*100
     {
       var r = AtomicReference(Thing())
 
